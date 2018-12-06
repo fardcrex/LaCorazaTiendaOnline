@@ -79,6 +79,12 @@ gulp.task('pug-dev', () =>
     }))
     .pipe(gulp.dest('./public'))
 )
+gulp.task('html-dev', () =>
+  gulp.src('./src/pug/pages/**/*.html')
+    .pipe(plumber())
+    
+    .pipe(gulp.dest('./public'))
+)
 
 gulp.task('pug-build', () =>
   gulp.src('./src/pug/pages/**/*.pug')
@@ -161,7 +167,7 @@ gulp.task('sitemap', () => {
     .pipe(gulp.dest('./public'))
 })
 
-gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev'], () => {
+gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','html-dev'], () => {
   server.init({
     server: {
       baseDir: './public'
@@ -170,6 +176,7 @@ gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev'], () => {
 
   watch('./src/scss/**/**', () => gulp.start('styles-dev'))
   watch('./src/js/**/**', () => gulp.start('scripts-dev', server.reload))
+  watch('./src/pug/**/**', () => gulp.start('html-dev', server.reload))
   watch('./src/pug/**/**', () => gulp.start('pug-dev', server.reload))
   watch('./src/img/**/**', () => gulp.start('images-dev'))
 })

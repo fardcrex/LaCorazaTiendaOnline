@@ -2,4 +2,6 @@
 *.css.map
 node_modules
 .idea/
+public/**/**
+
 public/
