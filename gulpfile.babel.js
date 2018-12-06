@@ -16,6 +16,7 @@ import imagemin from 'gulp-imagemin'
 import sitemap from 'gulp-sitemap'
 import cachebust from 'gulp-cache-bust'
 import tildeImporter from 'node-sass-tilde-importer'
+import autoprefixer from 'autoprefixer'
 
 const server = browserSync.create()
 
