@@ -71,7 +71,7 @@ gulp.task('styles-build', () => {
 })
 
 gulp.task('pug-dev', () =>
-  gulp.src('./src/pug/pages/**/*.pug')
+  gulp.src('./src/pug/pages/**/*.pug')  
     .pipe(plumber())
     .pipe(pug({
       pretty: true,
@@ -178,7 +178,7 @@ gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','html-dev
   watch('./src/js/**/**', () => gulp.start('scripts-dev', server.reload))
   watch('./src/pug/**/**', () => gulp.start('html-dev', server.reload))
   watch('./src/pug/**/**', () => gulp.start('pug-dev', server.reload))
-  watch('./src/img/**/**', () => gulp.start('images-dev'))
+  watch('./src/img/**/**', () => gulp.start('images-dev',server.reload))
 })
 
 gulp.task('cache', () => {

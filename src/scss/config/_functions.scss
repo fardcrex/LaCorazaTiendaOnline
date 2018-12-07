@@ -1,0 +1,15 @@
+@function color($val){
+  @if ($val==claro){
+    @return map-get($colors,claro);
+  } @else if ($val=="oscuro"){
+    @return map-get($colors,oscuro);
+  } @else if ($val==1){
+    @return map-get($colors,pri_color);
+  } @else if ($val==2){
+    @return map-get($colors,sec_color);
+  } @else if ($val==3){
+    @return map-get($colors,ter_color);
+  }
+  
+}
+

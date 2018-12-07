@@ -1,8 +1,20 @@
 extends ../config/template
 append config
-  -pageTitle = 'Home'
-  -pageDescription = 'Pagina inicial de EDboilerplate'
+  -pageTitle = 'Inicio'
+  -pageDescription = 'Pagina inicial de LaCoraza'
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
-block main
-  include ../includes/main-menu
+block main  
+  div.layout    
+    
+    main
+      .logo-main
+        img(src="/assets/img/logoletra.png", alt="")
+    .separador1
+    article.article_hombre
+    .separador2
+    article.article_mujer
+    .separador3
+    aside
+    footer
+      p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima doloribus nulla recusandae dolores doloremque distinctio ullam ipsum corrupti maiores accusantium quam facere, cum laudantium magnam harum dolor sunt explicabo modi.

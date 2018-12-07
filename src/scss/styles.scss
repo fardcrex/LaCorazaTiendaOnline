@@ -3,8 +3,8 @@
 */
 
 // Config
-@import "config/functions";
 @import "config/variables";
+@import "config/functions";
 @import "config/mixins";
 
 // Base and elements (generic)
@@ -15,11 +15,13 @@
   // Escribe solo los estilos de layout (division en regiones del viewport)
 @import "layout/layout";
 
+
 // MODULOS (SMACSS) O COMPONENTES (ITCSS)
   // Son los elementos de UI de tu interfaz, como botones, tablas, menus, etc.
   // Crea los archivos adicionales que necesites (uno por componente)
 @import "components/buttons";
 @import "components/menus";
+@import "components/header";
 
 // Theme (colors and fonts)
 @import "theme/typography";
