@@ -1,0 +1,16 @@
+@mixin separador($num,$color){
+  .separador#{$num}{
+    grid-column: 1 / 11;
+    grid-row:  #{$inicio} / #{$inicio+1};
+  
+    height: $tamañoseparador;
+    background-color: color($color);
+    @media screen and (min-width:$cel){
+      height: $tamañoseparador;
+      
+      grid-column: 1 / 13;
+  
+    }
+  }
+  
+}

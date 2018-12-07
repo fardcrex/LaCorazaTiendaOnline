@@ -1,0 +1,55 @@
+.fondo_caja{
+  background-image: url("/assets/img/fms.jpg");
+  @media screen and (min-width:$cel){    
+    grid-template-rows: 50px ;
+  }
+
+  @media screen and (min-width:$tablet){      
+    background-image: url("/assets/img/fmm.jpg");
+  }
+
+  @media screen and (min-width:$laptop){
+  }
+  @media screen and (min-width:$desk){      
+    background-image: url("/assets/img/fml.jpg");
+  }
+
+}
+.fondo_hombre{
+  background-position: center center;
+  background-image: url("/assets/img/guys.jpg");
+  @media screen and (min-width:$cel){    
+    grid-template-rows: 50px ;
+  }
+
+  @media screen and (min-width:$tablet){      
+    background-image: url("/assets/img/guym.jpg");
+  }
+
+  @media screen and (min-width:$laptop){
+    
+  }
+  @media screen and (min-width:$desk){      
+    background-image: url("/assets/img/guyl.jpg");
+  }
+}
+
+.fondo_mujer{
+
+  background-position: top;
+  background-image: url("/assets/img/girls.jpg");
+  @media screen and (min-width:$cel){    
+    grid-template-rows: 50px ;
+  }
+
+  @media screen and (min-width:$tablet){      
+    background-image: url("/assets/img/girlm.jpg");
+  }
+
+  @media screen and (min-width:$laptop){
+    
+  }
+  @media screen and (min-width:$desk){      
+    background-image: url("/assets/img/girll.jpg");
+  }
+}

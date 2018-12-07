@@ -1,0 +1,64 @@
+
+.productos{
+  $position: left;
+ 
+  grid-column: 1 / 11;
+  grid-row: #{$inicio}/ #{$inicio+$rows};
+
+  min-height: 100vh;
+  background-color: color(claro);
+    
+  @media screen and (min-width:$cel){
+   
+    background-position: 25% center;
+    
+  
+  }
+  @media screen and (min-width:$tablet){
+   
+   
+    
+ 
+  }
+  @media screen and (min-width:$laptop){
+       
+    grid-column: 1 / 13;
+  
+  }
+}
+
+.contenedor{
+  
+  display: grid;
+  grid-column: 1 / 11;
+  grid-row: #{$inicio}/ #{$inicio+$rows};
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
+  background-color: color(claro);
+  
+ 
+ 
+  
+  @media screen and (min-width:$cel){
+    
+    background-position: 25% center;
+    
+  
+  }
+  @media screen and (min-width:$tablet){
+   
+ 
+  }
+  @media screen and (min-width:$laptop){
+       
+    grid-column: 2 / 12;
+  
+  }
+}
+
+
+
+
+
+$inicio: $rows+$inicio;

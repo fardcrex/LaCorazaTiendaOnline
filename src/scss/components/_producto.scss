@@ -1,0 +1,45 @@
+.caja-producto{
+  width: 280px;
+height: 390px;
+
+
+}
+
+.caja-producto-item1{  
+
+& img{
+  background-color: white;
+  width: 280px;
+  height: auto;
+   border: 1.5px solid color(oscuro);;
+}
+& i{
+  color: color(oscuro);
+  font-size:28px;
+  position:relative;
+  transform:translate(750% , -150% );
+}
+}
+.caja-producto-item2{
+  font-family: raleway;
+  color: color(oscuro);
+background-color: transparent;
+min-height:80px;
+ font-size:18px;
+display: grid;
+grid-template-columns: 1fr ;
+grid-template-rows: fit-content fit-content;
+padding: 0 2%;
+justify-content:center;
+align-items:stretch;
+;
+&_title{
+  align-self: start;
+  padding-top:2%;
+  border-top: 2px dotted color(oscuro);
+}
+&_precio{
+  align-self: end;
+  padding-bottom:2%;
+}
+}

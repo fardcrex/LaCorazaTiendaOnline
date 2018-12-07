@@ -1,38 +1,65 @@
-main{
-  height: 100vh;
-  grid-area: my-main;
-  background-image: url("/assets/img/fmxl.jpg");
+
+.inicio-main{
+  background-color: color(claro);
+  height: calc(100vh - 45px);
+  grid-column: 1 / 11;
+  grid-row: #{$inicio}/ #{$inicio+$rows};
+  
   background-size: cover;
-  background-position: -100px center;
-  background-repeat: no-repeat;
+  background-position: -105px center;
+  
   @media screen and (min-width:$cel){
-    background-position: left;
+    background-position: -105px center;
+  
   }
-
-
+  @media (max-width: $tablet) and (orientation: landscape) {
+    background-position: center center;
+    
+    grid-row: #{$inicio}/ #{$inicio+$rows};
+  }
   @media screen and (min-width:$laptop){
+    height: calc(100vh - 50px);
     background-position: left;
+    grid-column: 1 / 13;
+    
+    grid-row: #{$inicio}/ #{$inicio+$rows};
   }
 
 }
 
-.logo-main{
-  margin: auto;
-  margin-top: 1vh;
-  width: 60%;
-  max-width: 600px ;
-  min-width: 200px ;
-  margin-left: 35%;
-  & img {
-    display: inline-block;
-  }
-  @media screen and (min-width:$cel){
-    min-width: 400px ;
-    margin-left: 18vh;
-    margin-top: 3vh;
+
+
+
+.caja1{
+  height: calc((100vh - 45px)* 1 / #{$rows});
+  display: grid;
+  
+  grid-row: 2 /3;
+  grid-column: 4 / span 6;
+  z-index: 2;
+  
+  & img{
+    align-self: center;
+    width: 100%;
+    height: auto;
+    @media (max-height: $laptop) and (orientation: landscape) {
+      
+        align-self: center;
+       
+           
+  }}
+  @media (max-height: $laptop) and (orientation: landscape) {
+    background-position: center center;
+    grid-row: 2 /4;
+    height: calc((100vh - 50px)* 2 / #{$rows});
+    
   }
   @media screen and (min-width:$tablet){
-    margin: auto;
-    margin-top: 3vh;
+    grid-row: 2 /4;
+    height: calc((100vh - 50px)* 2 / #{$rows});
+  }
+  @media screen and (min-width:$laptop){
+   
   }
 }
+$inicio: $rows+$inicio;

@@ -6,7 +6,7 @@
   grid-template-areas: ". logo . toggle .";
   background-color: color(oscuro);
   position: fixed;
-
+  z-index: 1000;
   @media screen and (min-width:$cel){
     
     height: 50px;
@@ -15,6 +15,7 @@
   @media screen and (min-width:$tablet){
     grid-template-columns: 3% 80px 1fr 80px 3%  ;
   grid-template-areas: ". logo menu user .";
+  height: 50px;
   }
   @media screen and (min-width:$laptop){
     grid-template-columns: 3% 80px 1fr 80px 3%  ;

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://example.com/</loc>
+        <lastmod>2018-12-07T23:24:40.293Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Nosotros.html</loc>
+        <lastmod>2018-12-07T20:21:07.426Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Contacto/</loc>
+        <lastmod>2018-12-07T23:24:40.462Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Carrito/</loc>
+        <lastmod>2018-12-07T23:24:40.373Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Hombre/</loc>
+        <lastmod>2018-12-07T23:24:40.559Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Producto/</loc>
+        <lastmod>2018-12-07T23:24:40.698Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Mujer/</loc>
+        <lastmod>2018-12-07T23:24:40.560Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Nosotros/</loc>
+        <lastmod>2018-12-07T23:24:40.697Z</lastmod>
+    </url>
+</urlset>

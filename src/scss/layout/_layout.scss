@@ -4,116 +4,55 @@
   width: 100%;
   min-height: 100vh;
   display: grid;  
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(9,auto);
+  grid-template-columns: repeat(10,1fr) ;
+  grid-template-rows: 45px ;
     
   grid-template-areas:
-    "head"
-    "my-main "
-    "separador1"
-    "my-article1"
-    "separador2"
-    "my-article2"
-    "separador3"
-    "my-aside "    
-    "my-footer";
-    @media screen and (min-width:$cel){
-      grid-template-rows: 
-    45px
-    calc(100vh - 45px)
-    60px
-    125vh
-    60px
-    125vh
-    60px
-    125vh
-    200px;
+    ".";
+
+    @media screen and (min-width:$cel){    
+      grid-template-rows: 50px ;
     }
-    @media screen and (min-width:$tablet){
-      grid-template-rows: 
-    45px
-    calc(100vh - 45px)
-    60px
-    100vh
-    60px
-    100vh
-    60px
-    100vh
-    200px;
+  
+    @media screen and (min-width:$tablet){      
+      
     }
   
     @media screen and (min-width:$laptop){
-      grid-template-rows: 
-      45px
-      calc(100vh - 45px)
-      60px
-      100vh
-      60px
-      100vh
-      1fr
-      100vh
-      200px;
+      grid-template-columns: 1fr repeat(10,100px)  1fr;     
     }
-
-
 }
+$tamañoseparador:2.5rem;
 
 
 
+$rows:10;
+$inicio:2;
 @import "_inicio-main";
 
+@include separador(1,3);
+$inicio:$inicio+1;
+
+$rows:1;
+@import "productos";
 
 
+$rows:5;
+@import "_article-hombre";
+
+@include separador(2,1);
+$inicio:$inicio+1;
+
+$rows:5;
+@import "_article-mujer";
+
+@include separador(3,3);
+$inicio:$inicio+1;
+
+$rows:6;
+@import "_snow";
 
 
+@import "_footer";
 
 
-
-.separador1{
-  grid-area:separador1;
-  background-color: color(1);
-}
-.article_hombre{
-  height: 100vh;
-  grid-area: my-article1;
-  background-image: url("/assets/img/fhombre.jpg");
-  background-size: cover;
-  background-position: 25% center;
-  background-repeat: no-repeat;
-  @media screen and (min-width:$laptop){
-    background-position: left;
-  }
-}
-.separador2{
-  grid-area:separador2;
-  background-color: color(oscuro);
-}
-.article_mujer{
-  grid-area: my-article2;
-  background-image: url("/assets/img/fmujerxl.jpg");
-  background-size: cover;
-  background-position: 75% center;
-
-  @media screen and (min-width:$laptop){
-    background-position: left;
-  }
-}
-.separador3{
-  grid-area:separador3;
-  background-color:  color(1);
-}
-aside {
-  grid-area: my-aside;
-  background-image: url("/assets/img/snowxl.jpg");
-  background-size: cover;
-  background-position: 80% center;
-
-  @media screen and (min-width:$laptop){
-    background-position: left;
-  }
-}
-
-.footer {
-  grid-area: my-footer;
-  background-color: color(oscuro);
-}

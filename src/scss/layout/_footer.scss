@@ -1,0 +1,14 @@
+.footer { 
+  
+  grid-column: 1 / 11;
+  grid-row:  #{$inicio} / #{ $inicio+1};
+
+  background-color: color(oscuro);
+  height: $tamañoseparador * 5;
+  @media screen and (min-width:$laptop){
+    
+    
+    grid-column: 1 / 13;
+  ;
+  }
+}

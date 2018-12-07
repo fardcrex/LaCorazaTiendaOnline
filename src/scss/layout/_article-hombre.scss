@@ -1,0 +1,33 @@
+
+
+.article_hombre{
+  $position: left;
+ 
+  grid-column: 1 / 11;
+  grid-row: #{$inicio}/ #{$inicio+$rows};
+
+  height: 100vh;
+  background-image: url("/assets/img/fhombrem.jpg");
+  background-size: cover;
+  background-position: 25% center;
+  background-repeat: no-repeat; 
+  
+  @media screen and (min-width:$cel){
+    height: 125vh;
+    background-position: 25% center;
+    
+  
+  }
+  @media screen and (min-width:$tablet){
+    height: calc(100vh);
+    background-position: $position;
+    
+ 
+  }
+  @media screen and (min-width:$laptop){
+       
+    grid-column: 1 / 13;
+  
+  }
+}
+$inicio: $rows+$inicio;
