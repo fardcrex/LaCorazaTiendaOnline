@@ -13,10 +13,14 @@
     
   }
   @media screen and (min-width:$tablet){
-    grid-template-columns: 3% 60px 1fr 100px 3%  ;
+    grid-template-columns: 3% 80px 1fr 80px 3%  ;
   grid-template-areas: ". logo menu user .";
   }
   @media screen and (min-width:$laptop){
+    grid-template-columns: 3% 80px 1fr 80px 3%  ;
+  grid-template-areas: ". logo menu user .";
+  }
+  @media screen and (min-width:$desk){
     grid-template-columns: 3% 1fr 1000px 1fr 3%  ;
   grid-template-areas: ". logo menu user .";
   }
@@ -37,9 +41,11 @@
   grid-area: menu;
   align-self: center;
   justify-self: center;
-  @media screen and (max-width:$tablet){
-    display: none;
-  }}
+  display: none;
+    @media screen and (min-width:$tablet){
+      display: inline-block;
+    }
+}
   .main-menu-list{
     margin-top: 0;
     margin-bottom: 0;
@@ -49,8 +55,10 @@
     & a{
       font-family: raleway;
   color: color(claro);
-  font-size: 24px;
-  margin: 20px
+  font-size: 20px;
+  margin: 20px;
+
+  
     }
   }
 
@@ -58,14 +66,14 @@
   grid-area: user;
   place-self: center;
   color: color(claro);
-  display: flex;
-  
-  @media screen and (max-width:$tablet){
+    margin-top: 0;
     display: none;
-  }
+    @media screen and (min-width:$tablet){
+      display: flex;
+    }
   & a{
     color: color(claro);
-    margin: 0 1rem ;
+    margin: 0 0.5rem ;
     font-size: 13px;
 }}
 .main-header__item4{
