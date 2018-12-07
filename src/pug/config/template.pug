@@ -11,10 +11,13 @@ html(lang="es")
     meta(property="og:title" content=pageTitle)
     meta(property="og:description" content=pageDescription)
     meta(property="og:image" content=pageImage)
-    link(rel="stylesheet" href="css/styles.css")
-    link(rel="shortcut icon" href="img/favicon.png")
+    link(rel="stylesheet" href="/css/styles.css")
+    link(rel="shortcut icon" href="/assets/img/logo.png")
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
     
   body
+    include ../includes/header
     block main
 
     script(src="js/scripts-min.js")

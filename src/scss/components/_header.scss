@@ -1,0 +1,93 @@
+.main-header{
+  height: 45px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 3% 60px 1fr 60px 3%  ;
+  grid-template-areas: ". logo . toggle .";
+  background-color: color(oscuro);
+  position: fixed;
+
+  @media screen and (min-width:$cel){
+    
+    height: 50px;
+    
+  }
+  @media screen and (min-width:$tablet){
+    grid-template-columns: 3% 60px 1fr 100px 3%  ;
+  grid-template-areas: ". logo menu user .";
+  }
+  @media screen and (min-width:$laptop){
+    grid-template-columns: 3% 1fr 1000px 1fr 3%  ;
+  grid-template-areas: ". logo menu user .";
+  }
+}
+.main-header__item1{
+  grid-area: logo;
+  display: grid;
+  align-self: center;
+}
+  .imagen-menu{
+   display: inline-block;
+   height: 40px;
+  }
+
+
+
+.main-header__item2{
+  grid-area: menu;
+  align-self: center;
+  justify-self: center;
+  @media screen and (max-width:$tablet){
+    display: none;
+  }}
+  .main-menu-list{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    & a{
+      font-family: raleway;
+  color: color(claro);
+  font-size: 24px;
+  margin: 20px
+    }
+  }
+
+.main-header__item3{
+  grid-area: user;
+  place-self: center;
+  color: color(claro);
+  display: flex;
+  
+  @media screen and (max-width:$tablet){
+    display: none;
+  }
+  & a{
+    color: color(claro);
+    margin: 0 1rem ;
+    font-size: 13px;
+}}
+.main-header__item4{
+  height: 2.5rem;
+  display: grid;
+ grid-area: toggle;
+ place-self: center;
+   @media screen and (min-width:$tablet){
+  display: none
+}
+  @media screen and (min-width:$laptop){
+  display: none
+}
+}
+.main-menu-toggle
+{
+  $color: color(claro);
+  width: 2.5rem;
+  height: 1.7rem;
+  place-self: center;
+  background: linear-gradient($color 18%, transparent 18%,transparent 41%,$color
+   41%,$color 59%,transparent 59%,transparent 82%,$color 82%,$color 100%,)
+}
+
+

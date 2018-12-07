@@ -4,10 +4,15 @@ $font-f-uno: 'Anton';
 $font-f-dos: 'Raleway';
 
 $colors:(
-  primary_color : #46798E,
-  secundary_color :#3C4043,
-  color_fondo: #F1F3F4,
-  color_verde: #008338,
-  color_crema: #FFCF9D,
-
+  pri_color : #46798E,
+  sec_color: #008338,
+  ter_color: #FFCF9D,
+  oscuro :#3C4043,
+  claro: #F1F3F4,
 );
+
+
+$cel: 600px;
+$tablet: 960px;
+$laptop: 1264px;
+

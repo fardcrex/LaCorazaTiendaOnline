@@ -1,10 +1,10 @@
-![Logo EDboilerplate](https://ed.team/sites/default/files/EDboilerplate-logo.png)
+![Logo EDboilerplate](/public/assets/img/logo.png)
 
-# EDboilerplate
+# LaCorazaFrontend
 
 Es una sencilla estructura para un proyecto web estático.
 
-## Características de EDboilerplate:
+## Características de LaCorazaFrontend:
 
 * Usa gulp para automatizar tareas
 * Esta basado en Sass, Pug y ES6.

@@ -1,0 +1,127 @@
+
+body{
+  background-color: #D5D9DC;
+}
+.layout{
+  
+  color: #D5D9DC;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 
+    45px
+    100vh
+    60px
+    100vh
+    60px
+    100vh
+    60px
+    100vh
+    200px;
+  grid-template-areas:
+    "head"
+    "my-main "
+    "separador1"
+    "my-article1"
+    "separador2"
+    "my-article2"
+    "separador3"
+    "my-aside "    
+    "my-footer"
+}
+
+main{
+  grid-area: my-main;
+  background-image: url("/assets/img/fmxl.jpg");
+  background-size: cover;
+  background-position: -100px center;
+
+  @media screen and (min-width:$laptop){
+    background-position: left;
+  }
+
+}
+
+.logo-main{
+  margin: auto;
+  margin-top: 1vh;
+  width: 60%;
+  max-width: 600px ;
+  min-width: 350px ;
+  margin-left: auto;
+  & img {
+    display: inline-block;
+  }
+  @media screen and (min-width:$cel){
+    min-width: 400px ;
+    margin-left: 18vh;
+    margin-top: 3vh;
+  }
+  @media screen and (min-width:$tablet){
+    margin: auto;
+    margin-top: 3vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.separador1{
+  grid-area:separador1;
+  background-color: color(1);
+}
+.article_hombre{
+  grid-area: my-article1;
+  background-image: url("/assets/img/fhombre.jpg");
+  background-size: cover;
+  background-position: -100px center;
+
+  @media screen and (min-width:$laptop){
+    background-position: left;
+  }
+}
+.separador2{
+  grid-area:separador2;
+  background-color: color(oscuro);
+}
+.article_mujer{
+  grid-area: my-article2;
+  background-image: url("/assets/img/fmujerxl.jpg");
+  background-size: cover;
+  background-position: -100px center;
+
+  @media screen and (min-width:$laptop){
+    background-position: left;
+  }
+}
+.separador3{
+  grid-area:separador3;
+  background-color:  color(1);
+}
+aside {
+  grid-area: my-aside;
+  background-image: url("/assets/img/snowxl.jpg");
+  background-size: cover;
+  background-position: -100px center;
+
+  @media screen and (min-width:$laptop){
+    background-position: left;
+  }
+}
+
+footer {
+  grid-area: my-footer;
+  background-color: color(oscuro);
+}
