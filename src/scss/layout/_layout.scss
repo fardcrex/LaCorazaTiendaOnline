@@ -1,5 +1,5 @@
 .layout{
-  color: #D5D9DC;
+  
   margin: 0 auto;
   width: 100%;
   min-height: 100vh;
@@ -33,7 +33,7 @@ $inicio:2;
 @include separador(1,3);
 $inicio:$inicio+1;
 
-$rows:1;
+$rows:3;
 @import "productos";
 
 

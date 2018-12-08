@@ -26,18 +26,21 @@
   
   }
 }
-
+.title_productos{
+  position: absolute;
+  transform: translate(0%, 0);
+  }
 .contenedor{
-  
+  padding: 8rem 0;  
   display: grid;
   grid-column: 1 / 11;
-  grid-row: #{$inicio}/ #{$inicio+$rows};
+  grid-row: #{$inicio + 1}/ #{$inicio+$rows - 1};
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   align-items: center;
   background-color: color(claro);
+  grid-row-gap: 5vh;
   
- 
  
   
   @media screen and (min-width:$cel){

@@ -1,2 +1,47 @@
-!function e(n,o,r){function t(i,c){if(!o[i]){if(!n[i]){var a="function"==typeof require&&require;if(!c&&a)return a(i,!0);if(u)return u(i,!0);var l=new Error("Cannot find module '"+i+"'");throw l.code="MODULE_NOT_FOUND",l}var f=o[i]={exports:{}};n[i][0].call(f.exports,function(e){var o=n[i][1][e];return t(o||e)},f,f.exports,e,n,o,r)}return o[i].exports}for(var u="function"==typeof require&&require,i=0;i<r.length;i++)t(r[i]);return t}({1:[function(e,n,o){"use strict";e("./modules/example");(0,e("./modules/active-menu").activeMenu)()},{"./modules/active-menu":2,"./modules/example":3}],2:[function(e,n,o){"use strict";Object.defineProperty(o,"__esModule",{value:!0});o.activeMenu=function(){var e=document.getElementById("main-menu");e&&Array.from(e.querySelectorAll("a")).map(function(e){e.href!==location.href&&e.href!==location.href.slice(0,-1)||e.classList.add("active")})}},{}],3:[function(e,n,o){"use strict";Object.defineProperty(o,"__esModule",{value:!0});o.saludo=function(){console.log("Hola mundo")},o.despedida=function(){console.log("Adiós mundo")}},{}]},{},[1]);
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
+
+var _example = require("./modules/example");
+
+var _activeMenu = require("./modules/active-menu");
+
+// saludo()
+// despedida()
+(0, _activeMenu.activeMenu)();
+
+},{"./modules/active-menu":2,"./modules/example":3}],2:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var activeMenu = exports.activeMenu = function activeMenu() {
+    var menu = document.getElementById('main-menu');
+    if (menu) {
+        var links = Array.from(menu.querySelectorAll('a'));
+        links.map(function (link) {
+            if (link.href === location.href || link.href === location.href.slice(0, -1)) link.classList.add('active');
+        });
+    }
+};
+
+},{}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// Este es un ejemplo de como exportar funciones desde un archivo
+// En index.js se importan estas funciones
+
+var saludo = exports.saludo = function saludo() {
+  console.log('Hola mundo');
+};
+
+var despedida = exports.despedida = function despedida() {
+  console.log('Adiós mundo');
+};
+
+},{}]},{},[1]);
+
 //# sourceMappingURL=scripts-min.js.map

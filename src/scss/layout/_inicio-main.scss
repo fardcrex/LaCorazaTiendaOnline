@@ -30,7 +30,7 @@
 
 
 
-.caja1{
+.logo{
   height: calc((100vh - 45px)* 1 / #{$rows});
   display: grid;
   
@@ -60,6 +60,40 @@
   }
   @media screen and (min-width:$laptop){
    
+  }
+}
+
+
+.logoCentrado{
+  height: calc((100vh - 45px)* 1 / #{$rows});
+  display: grid;
+  
+  grid-row: 2 /3;
+  grid-column: 3 / span 6;
+  z-index: 2;
+  
+  & img{
+    align-self: center;
+    width: 100%;
+    height: auto;
+    @media (max-height: $laptop) and (orientation: landscape) {
+      
+        align-self: center;
+       
+           
+  }}
+  @media (max-height: $laptop) and (orientation: landscape) {
+    background-position: center center;
+    grid-row: 2 /4;
+    height: calc((100vh - 50px)* 2 / #{$rows});
+    
+  }
+  @media screen and (min-width:$tablet){
+    grid-row: 2 /4;
+    height: calc((100vh - 50px)* 2 / #{$rows});
+  }
+  @media screen and (min-width:$laptop){
+    grid-column: 4 / span 6;
   }
 }
 $inicio: $rows+$inicio;
