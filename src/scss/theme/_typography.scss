@@ -1,13 +1,16 @@
-$font-pri: raleway;
-$font-sec: Anton;
+
 
 
 .title_productos{
-  font-family: 'Anton', sans-serif;
-  font-size: 21px;
+  font-family: $font-f-uno, sans-serif;
+  font-size: 16px;
   margin: 0;
   color: color(oscuro);
- 
+  @media screen and (min-width : $cel){
+    
+    font-size: 21px;
+  
+  }
   }
 .caja-producto-item2_title{
   font-weight: 0;

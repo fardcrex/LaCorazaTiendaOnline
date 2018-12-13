@@ -31,6 +31,7 @@
 
 
 .logo{
+  
   height: calc((100vh - 45px)* 1 / #{$rows});
   display: grid;
   
@@ -65,6 +66,7 @@
 
 
 .logoCentrado{
+  min-height: 80px;
   height: calc((100vh - 45px)* 1 / #{$rows});
   display: grid;
   
@@ -89,11 +91,14 @@
     
   }
   @media screen and (min-width:$tablet){
+
     grid-row: 2 /4;
     height: calc((100vh - 50px)* 2 / #{$rows});
   }
   @media screen and (min-width:$laptop){
+    min-height: 125px;
     grid-column: 4 / span 6;
   }
+  
 }
 $inicio: $rows+$inicio;

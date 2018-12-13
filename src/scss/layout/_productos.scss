@@ -1,16 +1,16 @@
 
-.productos{
-  $position: left;
+.fondo_productos{
+ 
  
   grid-column: 1 / 11;
   grid-row: #{$inicio}/ #{$inicio+$rows};
-
-  min-height: 100vh;
+  min-height: 50vh;
+  
   background-color: color(claro);
     
   @media screen and (min-width:$cel){
    
-    background-position: 25% center;
+  
     
   
   }
@@ -26,21 +26,44 @@
   
   }
 }
-.title_productos{
-  position: absolute;
-  transform: translate(0%, 0);
-  }
-.contenedor{
-  padding: 8rem 0;  
+
+.article_productos{
+  min-height: 50vh;
   display: grid;
   grid-column: 1 / 11;
-  grid-row: #{$inicio + 1}/ #{$inicio+$rows - 1};
+  grid-row: #{$inicio}/ #{$inicio + $rows};
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 15vh auto  ;
+  @media screen and (min-width : $laptop){
+    
+    grid-column: 2 / 12;
+  
+  }
+}
+
+
+
+.title_productos{
+  align-self: center;
+  width: 100%;
+  grid-column: 2 / 11;
+  @media screen and (min-width : $laptop){
+    
+    grid-column: 1/ 11;
+  
+  }
+  
+  }
+.contenedor{
+  grid-column: 1 / 11;
+  grid-row: 2 / 3;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   align-items: center;
   background-color: color(claro);
   grid-row-gap: 5vh;
-  
+  padding-bottom: 10vh;
  
   
   @media screen and (min-width:$cel){
@@ -55,7 +78,7 @@
   }
   @media screen and (min-width:$laptop){
        
-    grid-column: 2 / 12;
+   
   
   }
 }
