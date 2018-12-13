@@ -1,32 +1,29 @@
 ![Logo EDboilerplate](/public/assets/img/logo.png)
 
-# LaCorazaFrontend
+# LaCorazaFrontend ver https://www.zadness.com/
 
-Es una sencilla estructura para un proyecto web estático.
+Es la parte visual del e-commerce LaCoraza.
 
-## Características de LaCorazaFrontend:
+## Características en el desarrollo del Frontend de LaCoraza:
 
-* Usa gulp para automatizar tareas
-* Esta basado en Sass, Pug y ES6.
-* Compila Sass con autoprefixer y muestra los cambios en tiempo real
-* Compila Pug y actualiza el navegador con cada cambio
-* Compila ES6 con soporte para módulos ES6 (importar y exportar modulos)
-* Detecta nuevos archivos añadidos al proyecto sin tener que reiniciar gulp
-* Captura errores en Sass, Pug y Js evitando que gulp se detenga.
-* Crea los sourcemaps de los archivos compilados
-* Tiene una estructura lista de estilos (con Sass) basada en SMACSS y ITCSS
-* Tiene una estructura lista para HTML (con Pug) que divide páginas e includes.
-* Tiene una estructura lista para importar y exportar modulos ES6
-* Optimiza y comprime imágenes
+* Se usa gulp para automatizar las tareas
+* Se desarrolla con el uso de Sass, Pug y ES6.
+* Compilando Sass con autoprefixer y muestra los cambios en tiempo real
+* Compilando Pug y actualiza el navegador con cada cambio
+* Compilando ES6 con soporte para módulos ES6 (importar y exportar modulos)
+* Tiene una estructura de estilos (con Sass) basada en SMACSS y ITCSS
+* Tiene una estructura para HTML (con Pug) que divide páginas e includes.
+* Tiene una estructura para importar y exportar modulos ES6
+* Se optimiza y comprime imágenes
 
 ## Modo de uso
 
-1. Cree un fork de este repositorio y clonelo en local (o descargue este repositorio por zip).
-2. Ejecute en terminal `npm install -g gulp-cli`
-3. Ejecute `npm install` (asegurese de tener npm actualizado y Nodejs en v6 como minimo)
-4. Ejecute `gulp dev` para trabajar e desarrollo
-5. Ejecute `gulp build` para compilar sus archivos para produccion
-6. Disfrute
+
+1. Ejecute en terminal `npm install -g gulp-cli`
+2. Ejecute `npm install` (asegurese de tener npm actualizado y Nodejs en v6 como minimo)
+3. Se Ejecuta `gulp dev` para ver el trabajo en desarrollo
+4. Se Ejecuta `gulp build` para compilar sus archivos para produccion
+
 
 ## Estructura
 
@@ -36,5 +33,4 @@ Es una sencilla estructura para un proyecto web estático.
 4. Para Pug, la carpeta `pages` contiene las paginas del proyecto y la carpeta `includes` los bloques.
 5. Para Js, la carpeta `modules` contiene los módulos que serán importados desde `index.js`
 
-Siéntase libre de usarlo y de reportar cualquier problema que encuentre o sugerencia que tenga.
-EDboilerplate es gratis, open source y de la comunidad para la comunidad.
+Página creada desde cero sin ningún framwwork o librería de CSS
