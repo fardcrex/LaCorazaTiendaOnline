@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://example.com/</loc>
+<<<<<<< HEAD
         <lastmod>2018-12-13T05:14:19.711Z</lastmod>
     </url>
     <url>
@@ -27,5 +28,32 @@
     <url>
         <loc>https://example.com/Producto/</loc>
         <lastmod>2018-12-13T05:14:19.882Z</lastmod>
+=======
+        <lastmod>2018-12-13T05:03:35.248Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Carrito/</loc>
+        <lastmod>2018-12-13T05:03:35.499Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Hombre/</loc>
+        <lastmod>2018-12-13T05:03:35.615Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Contacto/</loc>
+        <lastmod>2018-12-13T05:03:35.611Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Mujer/</loc>
+        <lastmod>2018-12-13T05:03:35.618Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Nosotros/</loc>
+        <lastmod>2018-12-13T05:03:35.629Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Producto/</loc>
+        <lastmod>2018-12-13T05:03:35.631Z</lastmod>
+>>>>>>> master
     </url>
 </urlset>
