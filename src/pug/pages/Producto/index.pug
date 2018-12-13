@@ -5,4 +5,45 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  include ../../includes/main-menu
+  div.fondo-producto
+  .logoCentrado
+    img(src="/assets/img/logoletra.png", alt="La coraza")
+  main.perfil_producto
+    div.perfil_producto-item1
+      h1 Nombre del Producto
+      img(src="/assets/img/polo-3.jpg", alt="polo")
+      .perfil_producto-item1-visor
+        .perfil_producto-item1-visor-imgitem: img(src="/assets/img/polo-3.jpg", alt="")
+        .perfil_producto-item1-visor-imgitem: img(src="/assets/img/polo-3.jpg", alt="")
+        .perfil_producto-item1-visor-imgitem: img(src="/assets/img/polo-3.jpg", alt="")
+        .perfil_producto-item1-visor-imgitem: img(src="/assets/img/polo-3.jpg", alt="")
+    div.perfil_producto-item3
+      img(src="/assets/img/Caja.jpg", alt="caja")    
+    div.perfil_producto-item2
+      h2 Disponibilidad:
+      p 5 unidades
+      p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia adipisci facere
+      .perfil_producto-item2-cajas
+        .boton-opcion: p C1
+        .boton-opcion: p C2
+        .boton-opcion: p C3
+        .boton-opcion: p C4
+      .perfil_producto-item2-tallas
+        .boton-opcion-2: p S
+        .boton-opcion-2: p M
+        .boton-opcion-2: p L
+      .perfil_producto-item2-cantidad
+        <input type="number" name="cantidad" min="1" placeholder="Cantidad">
+      .bottom: p Comprar
+      .bottom.fantasma: p Añadir <i class="fas fa-shopping-cart fa-1x"></i>
+    
+
+  .separador1
+  .fondo_productos
+  article.article_productos
+    .title_productos
+      h2 También te puede gustar
+    .contenedor  
+      include ../../includes/producto         
+      include ../../includes/producto
+      include ../../includes/producto

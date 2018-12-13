@@ -1,5 +1,5 @@
 nav.main-menu(itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation")#main-menu
-  ul.main-menu-list
+  ul.main-menu-list#main-list
     each page in pages
       li.main-menu__item(itemprop="url")
           a.main-menu__link(href=page.url itemprop="name")= page.title

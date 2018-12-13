@@ -6,22 +6,33 @@ height: 390px;
 }
 
 .caja-producto-item1{  
-
+ 
 & img{
   background-color: white;
   width: 280px;
   height: auto;
-   border: 1.5px solid color(oscuro);;
+   box-shadow: 2px 3px 10px color(oscuro);
 }
 & i{
   color: color(oscuro);
   font-size:28px;
   position:relative;
   transform:translate(750% , -150% );
+  :hover{
+    color: black;
+    
+  }
+  
+}
+a {
+  :hover{
+    color: black;
+  
+  }
 }
 }
 .caja-producto-item2{
-  font-family: raleway;
+  font-family: $font-f-dos;
   color: color(oscuro);
 background-color: transparent;
 min-height:80px;
@@ -37,6 +48,13 @@ align-items:stretch;
   align-self: start;
   padding-top:2%;
   border-top: 2px dotted color(oscuro);
+  a {
+    color: color(oscuro);
+    :hover{
+      color: black;
+      font-size:22px;
+    }
+  }
 }
 &_precio{
   align-self: end;

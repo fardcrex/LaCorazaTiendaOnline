@@ -2,7 +2,7 @@
   height: 45px;
   display: grid;
   width: 100%;
-  grid-template-columns: 3% 60px 1fr 60px 3%  ;
+  grid-template-columns: 5% 60px 1fr 60px 5%  ;
   grid-template-areas: ". logo . toggle .";
   background-color: color(oscuro);
   position: fixed;
@@ -47,6 +47,19 @@
       display: inline-block;
     }
 }
+
+.main-header__item2__active{
+  position: fixed;
+  height: 32rem;
+  width: 90%;
+  background-color: color(2);
+  border: 5px solid color(oscuro);
+  border-radius: 5px;
+  top: 9vh;
+ left: 5%;
+ opacity: 0.9;
+}
+
   .main-menu-list{
     margin-top: 0;
     margin-bottom: 0;
@@ -54,7 +67,7 @@
     list-style: none;
     display: flex;
     & a{
-      font-family: raleway;
+      font-family: $font-f-dos;
   color: color(claro);
   font-size: 20px;
   margin: 20px;
@@ -62,6 +75,31 @@
   
     }
   }
+
+$num_items:5;
+  .main-menu-list__active{
+    
+    padding-top:5vh;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat($num_items+1,4rem);
+    grid-template-areas: ". ";
+    justify-items: center;  
+    align-items: center;
+    
+      & a{
+        font-family: raleway;
+    color: color(claro);
+    font-size: 30px;
+    
+        margin: auto;
+        padding: 10px 80px;
+    
+    }
+   }
+
+
 
 .main-header__item3{
   grid-area: user;
@@ -75,19 +113,51 @@
   & a{
     color: color(claro);
     margin: 0 0.5rem ;
-    font-size: 13px;
+    font-size: 10px;
 }}
+.main-header__item3__active{
+  position: fixed;
+  height: 5rem;
+  width: 90%;
+  background-color: transparent;
+  top: calc(4rem * #{$num_items} + 18vh);
+ left: 5%;
+ display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    justify-items: center;  
+    align-items: center;
+    
+    &__first{
+      font-family: raleway;
+  color: color(claro);
+  font-size: 15px;
+  
+  grid-column-start: 2;
+}  &__second{
+  font-family: raleway;
+color: color(claro);
+font-size: 15px;
+
+grid-column-start: 3;
+}
+
+}
 .main-header__item4{
   height: 2.5rem;
   display: grid;
  grid-area: toggle;
+ padding: 0 10%;
  place-self: center;
    @media screen and (min-width:$tablet){
   display: none
-}
+  }
   @media screen and (min-width:$laptop){
   display: none
-}
+  }
+  &:hover{
+    cursor: pointer;
+  }
 }
 .main-menu-toggle
 {
@@ -96,7 +166,8 @@
   height: 1.7rem;
   place-self: center;
   background: linear-gradient($color 18%, transparent 18%,transparent 41%,$color
-   41%,$color 59%,transparent 59%,transparent 82%,$color 82%,$color 100%,)
+   41%,$color 59%,transparent 59%,transparent 82%,$color 82%,$color 100%,);
+  
 }
 
 
