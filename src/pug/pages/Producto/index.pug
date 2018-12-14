@@ -10,7 +10,7 @@ block main
     img(src="/assets/img/logoletra.png", alt="La coraza")
   main.perfil_producto
     div.perfil_producto-item1
-      h1 Nombre del Producto
+      h1 Nombre del product
       img(src="/assets/img/polo-3.jpg", alt="polo")
       .perfil_producto-item1-visor
         .perfil_producto-item1-visor-imgitem: img(src="/assets/img/polo-3.jpg", alt="")
@@ -22,7 +22,7 @@ block main
     div.perfil_producto-item2
       h2 Disponibilidad:
       p 5 unidades
-      p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia adipisci facere
+      p(class="descripcion") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia adipisci facere
       .perfil_producto-item2-cajas
         .boton-opcion: p C1
         .boton-opcion: p C2
@@ -34,6 +34,7 @@ block main
         .boton-opcion-2: p L
       .perfil_producto-item2-cantidad
         <input type="number" name="cantidad" min="1" placeholder="Cantidad">
+        p S/. 20.00
       .bottom: p Comprar
       .bottom.fantasma: p Añadir <i class="fas fa-shopping-cart fa-1x"></i>
     

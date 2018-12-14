@@ -34,7 +34,7 @@
   
   height: calc((100vh - 45px)* 1 / #{$rows});
   display: grid;
-  
+  margin: 0.5rem;
   grid-row: 2 /3;
   grid-column: 4 / span 6;
   z-index: 2;
@@ -66,12 +66,14 @@
 
 
 .logoCentrado{
+ 
   min-height: 80px;
+  max-height: 160px;
   height: calc((100vh - 45px)* 1 / #{$rows});
   display: grid;
-  
+  margin: 0.5rem;
   grid-row: 2 /3;
-  grid-column: 3 / span 6;
+  grid-column: 2 / span 8;
   z-index: 2;
   
   & img{
@@ -86,9 +88,10 @@
   }}
   @media (max-height: $laptop) and (orientation: landscape) {
     background-position: center center;
-    grid-row: 2 /4;
+    grid-row: 2 /3;
     height: calc((100vh - 50px)* 2 / #{$rows});
-    
+   
+    min-height: 150px;
   }
   @media screen and (min-width:$tablet){
 

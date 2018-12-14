@@ -57,6 +57,7 @@ font-size: 18px;
   border: 1px solid $color;
    background-color: $color;
    color: $color-font;
+   cursor: pointer;
   
 }
 &.active{
@@ -72,4 +73,21 @@ font-size: 18px;
 
 .boton-opcion-2{
   @include boton-opcion(color(3),color(oscuro))
+ }
+
+ .boton-opcion-3{
+   
+  @include boton-opcion(white,color(oscuro));
+  background-color: red;
+  color: color(claro);
+  border-radius: 50%;
+  font-family: $font-f-dos;
+  font-weight: bold;
+  margin-right: 1%;
+  width: 35px;
+ height: 35px;
+ border: 2px solid color(oscuro);
+  &:hover{
+    border: 2px solid color(oscuro);
+ }
  }

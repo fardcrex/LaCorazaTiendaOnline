@@ -1,15 +1,20 @@
 header.main-header
   .main-header__item1
-    img(src="/assets/img/logo.png", alt="").imagen-menu
+    a(href="/"): img(src="/assets/img/logo.png", alt="").imagen-menu
   .main-header__item2#nav-main
     include main-menu
   .main-header__item3#header-items
     a(href="/Carrito")#header-items-1
       <i class="fas fa-shopping-cart fa-2x"></i>
-    a(href="#")#header-items-2
+    a(href="/Perfil")#header-items-2
       <i class="fas fa-user fa-2x"></i>
-    
+    a(href="/Ingreso")#header-items-3
+      <i class="fas fa-sign-out-alt fa-2x"></i>
   .main-header__item4#boton-main
     .main-menu-toggle
+  .main-header__social
+    a.face(href="https://www.facebook.com/" target="_blank"): <i class="fab fa-facebook-square"></i>
+    a.insta(href="https://www.instagram.com/?hl=es-la" target="_blank"): <i class="fab fa-instagram"></i>
+    a.tres(href="https://twitter.com/" target="_blank"): <i class="fab fa-twitter-square"></i>
     
     

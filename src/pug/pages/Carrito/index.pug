@@ -6,5 +6,29 @@ append config
 
 block main
   main.inicio-main
-  .separador2
-  aside.snow 
+  .fondo-carrito
+  .logoCentrado
+    img(src="/assets/img/logoletra.png", alt="La coraza")
+  main.carrito
+    .carrito-tittle: h1 Tu Carrito
+    .carrito-listProducto
+      include ../../includes/car-producto
+      include ../../includes/car-producto
+      include ../../includes/car-producto
+      include ../../includes/car-producto
+      include ../../includes/car-producto
+      include ../../includes/car-producto
+     
+    .carrito-precio: p Precio Final: S/.<span>2000</span>
+    .carrito-bottom
+      .bottom: p Comprar
+
+  .separador1
+  .fondo_productos
+  article.article_productos
+    .title_productos
+      h2 También te puede gustar
+    .contenedor  
+      include ../../includes/producto         
+      include ../../includes/producto
+      include ../../includes/producto

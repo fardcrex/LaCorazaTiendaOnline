@@ -5,6 +5,7 @@
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(10,1fr);
+    
     justify-items: center;
     align-items: top;
     @media screen and (min-width:$cel){
