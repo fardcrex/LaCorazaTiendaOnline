@@ -1,9 +1,9 @@
 .snow {
   $position: right;
-  
+  z-index: 10;
   grid-column: 1 / 11;
   grid-row: #{$inicio}/ #{$inicio+$rows};
-
+  box-shadow: 2px 2px 15px color(2);
   height: 100vh;
   background-image: url("/assets/img/snowxl.jpg");
   background-size: cover;

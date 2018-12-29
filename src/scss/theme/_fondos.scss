@@ -1,16 +1,22 @@
 .fondo_caja{
   background-image: url("/assets/img/fms.jpg");
+  opacity: 0.5;
+  z-index: -10;
   @media screen and (min-width:$cel){    
+    opacity: 0.625;
     grid-template-rows: 50px ;
   }
 
-  @media screen and (min-width:$tablet){      
+  @media screen and (min-width:$tablet){  
+    opacity: 0.75;    
     background-image: url("/assets/img/fmm.jpg");
   }
 
   @media screen and (min-width:$laptop){
+    opacity: 0.9; 
   }
   @media screen and (min-width:$desk){      
+    opacity: 1; 
     background-image: url("/assets/img/fml.jpg");
   }
 

@@ -1,9 +1,10 @@
 .footer { 
+  z-index: 5;
   font-family: $font-f-dos;
   grid-column: 2 /10;
   grid-row:  #{$inicio } / #{ $inicio+1};
-  color: color(claro);
-  background-color: color(oscuro);
+  color: color(oscuro);
+  background-color: color(fondo);
   height: $tamañoseparador * 6;
 
   display: grid;
@@ -72,11 +73,12 @@
     align-items: center;
     margin: 1.5rem;
 
-
     & .img-map{
+    box-shadow: 2px 2px 15px color(1);
+
       margin: 0 0 1rem;
       img{
-        border: 5px solid color(1);
+      //  border: 5px solid color(1);
       }
     }  
   }

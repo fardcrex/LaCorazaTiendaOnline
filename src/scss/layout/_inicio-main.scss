@@ -93,8 +93,11 @@
    
     min-height: 150px;
   }
+  @media screen and (min-width:$cel){
+    grid-column: 3 / span 6;
+  }
   @media screen and (min-width:$tablet){
-
+    grid-column: 3 / span 6;
     grid-row: 2 /4;
     height: calc((100vh - 50px)* 2 / #{$rows});
   }

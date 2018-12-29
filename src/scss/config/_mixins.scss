@@ -1,8 +1,9 @@
 @mixin separador($num,$color){
   .separador#{$num}{
+    z-index: 15;
     grid-column: 1 / 11;
     grid-row:  #{$inicio} / #{$inicio+1};
-  
+    box-shadow: 2px 3px 6px color($color),-1px -1px 6px color($color);
     height: $tamañoseparador;
     background-color: color($color);
     @media screen and (min-width:$cel){

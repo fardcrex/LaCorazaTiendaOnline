@@ -2,94 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://example.com/</loc>
-<<<<<<< HEAD
-        <lastmod>2018-12-14T05:57:25.270Z</lastmod>
+        <lastmod>2018-12-29T16:36:15.859Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/Carrito/</loc>
-        <lastmod>2018-12-14T05:57:25.448Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Hombre/</loc>
-        <lastmod>2018-12-14T05:57:25.473Z</lastmod>
+        <lastmod>2018-12-29T16:36:16.278Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/Contacto/</loc>
-        <lastmod>2018-12-14T05:57:25.475Z</lastmod>
+        <lastmod>2018-12-29T16:36:16.193Z</lastmod>
+    </url>
+    <url>
+        <loc>https://example.com/Hombre/</loc>
+        <lastmod>2018-12-29T16:36:15.906Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/Ingreso/</loc>
-        <lastmod>2018-12-14T05:57:25.363Z</lastmod>
+        <lastmod>2018-12-29T16:36:16.331Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/Mujer/</loc>
-        <lastmod>2018-12-14T05:57:25.476Z</lastmod>
+        <lastmod>2018-12-29T16:36:16.324Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/Nosotros/</loc>
-        <lastmod>2018-12-14T05:57:25.478Z</lastmod>
+        <lastmod>2018-12-29T16:36:16.379Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/Producto/</loc>
-        <lastmod>2018-12-14T05:57:25.479Z</lastmod>
+        <lastmod>2018-12-29T16:36:16.380Z</lastmod>
     </url>
     <url>
         <loc>https://example.com/Perfil/</loc>
-        <lastmod>2018-12-14T05:57:25.481Z</lastmod>
-=======
-<<<<<<< HEAD
-        <lastmod>2018-12-13T05:14:19.711Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Hombre/</loc>
-        <lastmod>2018-12-13T05:14:19.877Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Carrito/</loc>
-        <lastmod>2018-12-13T05:14:19.809Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Contacto/</loc>
-        <lastmod>2018-12-13T05:14:19.875Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Mujer/</loc>
-        <lastmod>2018-12-13T05:14:19.878Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Nosotros/</loc>
-        <lastmod>2018-12-13T05:14:19.881Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Producto/</loc>
-        <lastmod>2018-12-13T05:14:19.882Z</lastmod>
-=======
-        <lastmod>2018-12-13T05:03:35.248Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Carrito/</loc>
-        <lastmod>2018-12-13T05:03:35.499Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Hombre/</loc>
-        <lastmod>2018-12-13T05:03:35.615Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Contacto/</loc>
-        <lastmod>2018-12-13T05:03:35.611Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Mujer/</loc>
-        <lastmod>2018-12-13T05:03:35.618Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Nosotros/</loc>
-        <lastmod>2018-12-13T05:03:35.629Z</lastmod>
-    </url>
-    <url>
-        <loc>https://example.com/Producto/</loc>
-        <lastmod>2018-12-13T05:03:35.631Z</lastmod>
->>>>>>> master
->>>>>>> master
+        <lastmod>2018-12-29T16:36:16.378Z</lastmod>
     </url>
 </urlset>

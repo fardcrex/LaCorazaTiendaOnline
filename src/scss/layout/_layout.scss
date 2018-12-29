@@ -28,8 +28,10 @@ $tamañoseparador:2.5rem;
 
 $rows:10;
 $inicio:2;
-@import "_carrito";
+
 @import "perfil-producto";
+@import "_carrito";
+@import "_banner";
 @import "_inicio-main";
 
 @include separador(1,1);

@@ -1,3 +1,7 @@
+$fondo-caja: color(claro);
+$fondo-total: color(fondo);
+$border-caja: color(2);
+
 .perfil_producto{
     grid-column: 1 / 11;
     grid-row: #{($inicio) + 2 }/ #{($inicio + $rows) - 1};
@@ -9,29 +13,31 @@
     justify-items: center;
     align-items: top;
     @media screen and (min-width:$cel){
-  
+      background-color: $fondo-caja;
     }
     @media screen and (min-width:$tablet){
-    min-height: 600px;
-    height: calc((100vh - 45px)* 7 / #{$rows});
+      box-shadow: 2px 3px 10px $border-caja, -1px -1px 10px $border-caja;
+    min-height: 580px;
+    height: calc((100vh - 45px)* 5 / #{$rows});
     }
     @media screen and (min-width : $laptop){
-      box-shadow: 2px 3px 10px color(oscuro);
+      
       grid-column: 2 / 12;
-      background-color: white;
+      background-color: $fondo-caja;
     }
   
     &-item1{
       &>h1{
+        color: color(oscuro);
         margin-top: 3.5vh;
       }
       grid-column: 2 / 10;//grid-column: 2 / 6;
       font-family: $font-f-uno;
       &>img{
-        background-color: white;
+       
         width: 100%;
         height: auto;
-         box-shadow: 2px 3px 10px color(oscuro);
+         box-shadow: 2px 3px 10px color(1);
       }
     &-visor{
       margin-top: 0.7rem;
@@ -50,7 +56,7 @@
           height: 50px;
           width: 50px;
           border-radius: 50%;
-           border: 2px solid color(1);
+          box-shadow: 1px 1px 2px color(1),-1px -1px 2px color(1);
         
         }
         &:hover,.activeselect{
@@ -118,6 +124,12 @@
      
       }
     }
+    & input{
+      width: 7rem;
+      height: 1.8rem;
+      border-radius: 2px;
+      margin: 0.5rem 0;
+    }
     @media screen and (min-width: $cel){
       grid-column: 3 /9;
   
@@ -145,7 +157,7 @@
       height: 150px;
       width: 150px;
       border-radius: 50%;
-      box-shadow: 2px 3px 10px color(oscuro);
+      box-shadow: 2px 3px 10px color(1);
       border: 1px solid color(oscuro);
     }
    
@@ -189,8 +201,8 @@
 
 
 .fondo-producto{
-  background-color: color(claro);
- 
+  
+  min-height: calc(100vh - 50px);
   
   grid-column: 1 / 11;
   grid-row: #{$inicio}/ #{$inicio+$rows};
@@ -207,7 +219,12 @@
     
     grid-row: #{$inicio}/ #{$inicio+$rows};
   }
+  @media screen and (min-width:$tablet){
+    background-color: $fondo-total;
+  
+  }
   @media screen and (min-width:$laptop){
+    
     min-height: 780px;
     height: calc(100vh - 50px);
     background-position: left;

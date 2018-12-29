@@ -9,7 +9,8 @@
     @return map-get($colors,sec_color);
   } @else if ($val==3){
     @return map-get($colors,ter_color);
+  }@else if ($val==fondo){
+    @return map-get($colors,fondo);
   }
-  
 }
 

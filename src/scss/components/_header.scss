@@ -4,9 +4,10 @@
   width: 100%;
   grid-template-columns: 5% 60px 1fr 60px 5%  ;
   grid-template-areas: ". logo . toggle .";
-  background-color: color(oscuro);
+  background-color: color(claro);
   position: fixed;
   z-index: 1000;
+  box-shadow: 2px 2px 15px color(2);
   @media screen and (min-width:$cel){
     
     height: 50px;
@@ -81,17 +82,21 @@
        justify-items: center;  
        align-items: center;
       &:hover{
-        border-bottom: 3px solid color(claro);
+        border-bottom: 3px solid color(2);
       }
     }
     & a{
       font-family: $font-f-uno;
-      color: color(claro);
+      color: color(oscuro);
       font-size: 20px;
       margin: 0 20px;
-      
-      
+
   
+    }
+    @media screen and (max-width:$laptop){
+      & li:first-child{
+        display: none;
+      }
     }
   }
 
@@ -118,7 +123,7 @@ $num_items:4;
       
       & a{
         font-family: $font-f-uno;
-        color: color(claro);
+        color: color(oscuro);
         font-size: 30px;
     
         margin: auto;
@@ -132,14 +137,14 @@ $num_items:4;
 .main-header__item3{
   grid-area: user;
   place-self: center;
-  color: color(claro);
+  color: color(oscuro);
     margin-top: 0;
     display: none;
     @media screen and (min-width:$tablet){
       display: flex;
     }
   & a{
-    color: color(claro);
+    color: color(oscuro);
     margin: 0 0.5rem ;
     font-size: 10px;
 }}
@@ -158,20 +163,20 @@ $num_items:4;
     
     &__first{
       font-family: raleway;
-  color: color(claro);
+  color: color(oscuro);
   font-size: 15px;
   
   grid-column-start: 2;
 }  &__second{
   font-family: raleway;
-color: color(claro);
+color: color(oscuro);
 font-size: 15px;
 
 grid-column-start: 3;
 }
 &__third{
   font-family: raleway;
-color: color(claro);
+color: color(oscuro);
 font-size: 18px;
 
 grid-column-start: 4;
@@ -196,7 +201,7 @@ grid-column-start: 4;
 }
 .main-menu-toggle
 {
-  $color: color(claro);
+  $color: color(oscuro);
   width: 2.5rem;
   height: 1.7rem;
   place-self: center;
@@ -218,7 +223,7 @@ grid-column-start: 4;
   align-items: center;
   & a{
     border-radius: 30%;
-    color: color(claro);
+    color: color(oscuro);
     display: flex;
     justify-content: center;
     align-items: center;

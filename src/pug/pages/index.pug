@@ -6,9 +6,21 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main  
-  main.inicio-main.fondo_caja
+  .inicio-main.fondo_caja
   .logo 
     img(src="/assets/img/logoletra.png", alt="")
+  main.banner
+    div.banner-item1
+      h1 Tienda Online 
+      img(src="/assets/img/Caja.JPG", alt="polo")
+      
+    
+    div.banner-item2
+      h2 Estas fiestas haz un concepto diferente de obsequiar una camiseta
+        
+      p S/. 20.00
+      .bottom: p Comprar
+      .bottom.fantasma: p Añadir <i class="fas fa-shopping-cart fa-1x"></i>
   .separador1
   article.article_hombre
   .separador2
