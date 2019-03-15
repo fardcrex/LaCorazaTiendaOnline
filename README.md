@@ -1,6 +1,6 @@
 ![Logo EDboilerplate](/public/assets/img/logo.png)
 
-# LaCorazaFrontend ver https://www.lacoraza.com:8080
+# LaCorazaFrontend ver http://www.lacoraza.com:8080/
 
 Es la parte visual del e-commerce LaCoraza.
 
